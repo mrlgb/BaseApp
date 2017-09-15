@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    
+    <GridView
+	    android:id="@+id/sensor_grid_view"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:gravity="center_horizontal"
+	    android:layout_marginTop="5dip"
+	    android:padding="20dip"
+	    android:horizontalSpacing="20dp"
+	    android:numColumns="2"
+	    android:verticalSpacing="40dp" >
+	</GridView>
+    
+    
+		
+</LinearLayout>
