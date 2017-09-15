@@ -1,19 +1,17 @@
 package com.example.chenchen.baseapp.activity;
-
 import android.os.Build;
 import android.os.Bundle;
-
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
-
+import android.view.View;
 
 import com.example.chenchen.baseapp.R;
 
-
-public class ActivityTestActivity extends BaseSaveActivity  {
-    private static final String TAG = ActivityTestActivity.class.getSimpleName();
+public class ActivityFerry extends BaseSaveActivity  {
+    private static final String TAG = ActivityFerry.class.getSimpleName();
 
     protected int getLayoutResId() {
-        return 0;
+        return R.layout.activity_ferry;
     }
 
     @Override
@@ -25,8 +23,20 @@ public class ActivityTestActivity extends BaseSaveActivity  {
         }
 
         setContentView(layoutResId);
-
         initActivity(savedInstanceState);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.ferry_toolbar);
+        toolbar.setTitle("");
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+
+        // Handle Back Navigation :D
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ActivityFerry.this.onBackPressed();
+            }
+        });
 
     }
 

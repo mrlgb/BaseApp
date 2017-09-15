@@ -2,15 +2,15 @@ package com.example.chenchen.baseapp.activity;
 
 import android.os.Build;
 import android.os.Bundle;
-
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
-
+import android.view.View;
 
 import com.example.chenchen.baseapp.R;
 
-
-public class ActivityTestActivity extends BaseSaveActivity  {
-    private static final String TAG = ActivityTestActivity.class.getSimpleName();
+public class BaseSaveActivity extends AppCompatActivity {
+    private static final String TAG = BaseSaveActivity.class.getSimpleName();
 
     protected int getLayoutResId() {
         return 0;
@@ -23,10 +23,9 @@ public class ActivityTestActivity extends BaseSaveActivity  {
         if (layoutResId == 0) {
             finish();
         }
-
         setContentView(layoutResId);
-
         initActivity(savedInstanceState);
+
 
     }
 
@@ -49,6 +48,5 @@ public class ActivityTestActivity extends BaseSaveActivity  {
         getMenuInflater().inflate(R.menu.menu_save,menu);
         return true;
     }
-
 
 }

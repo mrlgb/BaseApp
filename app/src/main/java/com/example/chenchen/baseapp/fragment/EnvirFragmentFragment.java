@@ -11,6 +11,7 @@ import android.widget.ArrayAdapter;
 import android.widget.GridView;
 
 import com.example.chenchen.baseapp.R;
+import com.example.chenchen.baseapp.activity.ActivityFerry;
 import com.example.chenchen.baseapp.activity.ActivityTestActivity;
 import com.example.chenchen.baseapp.adapter.GridItmeAdapter;
 
@@ -54,7 +55,7 @@ public class EnvirFragmentFragment extends Fragment implements AdapterView.OnIte
     public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
         switch (position){
             case 0:
-                Intent intent=new Intent(getActivity(),ActivityTestActivity.class);
+                Intent intent=new Intent(getActivity(),ActivityFerry.class);
                intent.putExtra("shuju" ,"按钮"+position+"开启的Activity");
                 startActivity(intent);
 

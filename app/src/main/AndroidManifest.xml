@@ -16,7 +16,8 @@
         <activity android:name=".activity.MainActivity">
 
         </activity>
-        <activity android:name=".activity.ActivityTestActivity" />
+        <activity android:name=".activity.ActivityTestActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".ActivityLoginActivity"
             android:label="@string/title_activity_login">
@@ -25,6 +26,10 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".activity.ActivityFerry"
+            android:theme="@style/AppTheme.NoActionBar">
+
         </activity>
     </application>
 
